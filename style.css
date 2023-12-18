@@ -12,13 +12,37 @@ body {
   min-height: 100vh;
 }
 
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #3f3d56;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #89c5cc;
+  border-radius: 20px;
+  border: 3px solid #3f3d56;
+}
+
+::-moz-selection {
+  background-color: #89c5cc;
+  color: #000;
+}
+
+::selection {
+  background-color: #89c5cc;
+  color: #000;
+}
+
 .page {
   width: 1000px;
   margin: 0 auto;
   padding-top: 65px;
 }
 
-.nav {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,11 +102,10 @@ h1 span {
   font-size: 14px;
   line-height: 28px;
   color: #7d7987;
-
   margin: 40px 0;
 }
 
-.button {
+button {
   color: white;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
